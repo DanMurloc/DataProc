@@ -50,11 +50,11 @@ public class AxyAndGyro {
 
         double angle_accelx0 = Rad*Math.acos(ax0);
         double angle_accely0 = Rad*Math.acos(ay0);
-        double angle_accelz0 = Rad*Math.acos(az0);
+        double angle_accelz0 = Rad*Math.acos(az0)*0;
 
         double angle_accelx = Rad*Math.acos(ax);
         double angle_accely = Rad*Math.acos(ay);
-        double angle_accelz = Rad*Math.acos(az);
+        double angle_accelz = Rad*Math.acos(az)*0;
 
         double angleGyroskopX =angle_accelx0+gx*dt;
         double angleGyroskopY =angle_accely0+gy*dt;
