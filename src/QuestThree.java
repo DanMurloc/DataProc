@@ -99,6 +99,8 @@ public class QuestThree {
             shag += 500;
         }
         ArrayList<ArrayList<Double>> last = new ArrayList<ArrayList<Double>>();
+        last.add(diap);
+        last.add(result);
         return last;
     }
 

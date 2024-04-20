@@ -81,13 +81,45 @@ public class Main {
         double dr = q3.Dreyf(arrf3,arrft);
         System.out.println("Величина дрейфа по Z: "+dr+" Градус/ч");
         System.out.println("################################################");
+        /* ВАРИАЦИЯ АЛЛАНА
         System.out.println("3.3. Построение графика вариации Аллана для данных гироскопа " +
                 "и акселерометра из представленного датасета.");
         arrf1=list1.get(4).toArray(Double[]::new);
         ArrayList<ArrayList<Double>> li = q3.AllanVariance(arrf1);
         Double [] ar = li.get(0).toArray(Double[]::new);
         Double [] ar2 = li.get(1).toArray(Double[]::new);
-        g.Charting(ar,ar2,"График Вариации Аллана  по X","Тау","Вариация");
+        g.Charting(ar2,ar,"График Вариации Аллана для аксилирометра  по X","Тау","Вариация");
+
+        arrf1=list1.get(5).toArray(Double[]::new);
+        li = q3.AllanVariance(arrf1);
+        ar = li.get(0).toArray(Double[]::new);
+        ar2 = li.get(1).toArray(Double[]::new);
+        g.Charting(ar2,ar,"График Вариации Аллана для аксилирометра  по Y","Тау","Вариация");
+
+        arrf1=list1.get(6).toArray(Double[]::new);
+        li = q3.AllanVariance(arrf1);
+        ar = li.get(0).toArray(Double[]::new);
+        ar2 = li.get(1).toArray(Double[]::new);
+        g.Charting(ar2,ar,"График Вариации Аллана для аксилирометра  по Z","Тау","Вариация");
+
+        arrf1=list1.get(7).toArray(Double[]::new);
+        li = q3.AllanVariance(arrf1);
+        ar = li.get(0).toArray(Double[]::new);
+        ar2 = li.get(1).toArray(Double[]::new);
+        g.Charting(ar2,ar,"График Вариации Аллана для гироскопа  по X","Тау","Вариация");
+
+        arrf1=list1.get(8).toArray(Double[]::new);
+        li = q3.AllanVariance(arrf1);
+        ar = li.get(0).toArray(Double[]::new);
+        ar2 = li.get(1).toArray(Double[]::new);
+        g.Charting(ar2,ar,"График Вариации Аллана для гироскопа  по Y","Тау","Вариация");
+
+        arrf1=list1.get(9).toArray(Double[]::new);
+        li = q3.AllanVariance(arrf1);
+        ar = li.get(0).toArray(Double[]::new);
+        ar2 = li.get(1).toArray(Double[]::new);
+        g.Charting(ar2,ar,"График Вариации Аллана для гироскопа  по Z","Тау","Вариация");
+        */
     }
 }
 
