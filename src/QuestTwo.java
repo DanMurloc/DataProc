@@ -35,9 +35,9 @@ public class QuestTwo {
             double a_z0 = arr[i - 1][3];
             double a_z = arr[i][3];
 
-            double gx0 = (double) g_x / (double) GLSB;
-            double gy0 = (double) g_y / (double) GLSB;
-            double gz0 = (double) g_z / (double) GLSB;
+            double gx0 = (double) g_x0 / (double) GLSB;
+            double gy0 = (double) g_y0 / (double) GLSB;
+            double gz0 = (double) g_z0 / (double) GLSB;
 
             double gx = (double) g_x / (double) GLSB;
             double gy = (double) g_y / (double) GLSB;

@@ -21,7 +21,7 @@ public class Main {
         Double[] arrft = list1.get(3).toArray(Double[]::new);
         CreateGraph g = new CreateGraph();
         //Графики к первому заданию
-        //g.Charting(arrf1,arrft,"График ускорения от времени X","Время, c","Ускорение, м/с^2");
+        g.Charting(arrf1,arrft,"График ускорения от времени X","Время, c","Ускорение, м/с^2");
         //g.Charting(arrf2,arrft,"График ускорения от времени Y","Время, c","Ускорение, м/с^2");
         //g.Charting(arrf3,arrft,"График ускорения от времени Z","Время, c","Ускорение, м/с^2");
         list1.clear();
@@ -35,7 +35,7 @@ public class Main {
         //g.Charting(arrf2,arrft,"График ускорения от времени Y","Время, с","Скорость, град/c");
         //g.Charting(arrf3,arrft,"График ускорения от времени Z","Время, с","Скорость, град/c");
         //Значение частоты к третьему заданию
-        System.out.println("Задание 3.1 расчет частоты");
+        System.out.println("Задание 2.1 расчет частоты");
         System.out.println("Значение частоты:\t"+q1.Frequency(arrft)+"Гц");
         System.out.println("################################################");
         var q2 = new QuestTwo();
@@ -49,14 +49,14 @@ public class Main {
         //g.Charting(arrf1,arrft,"График углового перемещения от времени X","Время, с","Угол, градус");
         //g.Charting(arrf2,arrft,"График углового перемещения от времени Y","Время, с","Угол, градус");
         //g.Charting(arrf3,arrft,"График углового перемещения от времени Z","Время, с","Угол, градус");
-        System.out.println("3.2 Расчет углового пути");
+        System.out.println("2.2 Расчет углового пути");
         double A1=q2.AnglePath(arrf1);
         double A2=q2.AnglePath(arrf2);
         double A3=q2.AnglePath(arrf3);
         System.out.println("Угловой путь по X: "+A1+" Градусы");
         System.out.println("Угловой путь по Y: "+A2+" Градусы");
         System.out.println("Угловой путь по Z: "+A3+" Градусы");
-        System.out.println("3.3 Расчет оборотов");
+        System.out.println("2.3 Расчет оборотов");
         System.out.println("Число оборотов по X: "+q2.Turnovers(q2.AnglePath(arrf1))+" Оборотов");
         System.out.println("Число оборотов по Y: "+q2.Turnovers(q2.AnglePath(arrf2))+" Оборотов");
         System.out.println("Число оборотов по Z: "+q2.Turnovers(q2.AnglePath(arrf3))+" Оборотов");
